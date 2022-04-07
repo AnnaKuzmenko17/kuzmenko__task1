@@ -32,6 +32,7 @@ export const createNote = (formStore) => {
     dates: getDates(formStore.content),
     archived: false,
   };
+  
   store.data = [...store.data, note];
 };
 
