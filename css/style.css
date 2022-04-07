@@ -13,7 +13,7 @@ table {
 
 .thead {
   background-color: var(--secondary-color);
-  font-weight: bold;
+  font-weight: 600;
   color: white;
 }
 
