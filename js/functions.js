@@ -22,14 +22,14 @@ export const deleteNote = (id) => {
   store.data = store.data.filter((note) => note.id !== id);
 };
 
-export const createNote = (formstore) => {
+export const createNote = (formStore) => {
   const note = {
     id: Date.now().toString(),
-    name: formstore.name,
+    name: formStore.name,
     created: getCreatedDate(),
-    category: formstore.category,
-    content: formstore.content,
-    dates: getDates(formstore.content),
+    category: formStore.category,
+    content: formStore.content,
+    dates: getDates(formStore.content),
     archived: false,
   };
   store.data = [...store.data, note];
